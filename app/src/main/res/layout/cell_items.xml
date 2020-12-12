@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:layout_margin="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#D8D0D0"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_rectangle"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="#08CAE3"
+                            android:textSize="22sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold|italic"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/item_mrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MRP"
+                            android:textColor="#EC0332"
+                            android:textSize="18sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/item_selling_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Selling Price"
+                            android:textColor="#82ED06"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/item_stock_available"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Stock Available"
+                            android:textColor="#06E60F"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                    -<LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/note"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
