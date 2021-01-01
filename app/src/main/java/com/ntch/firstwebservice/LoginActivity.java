@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-            host=getString(R.string.host);// Call the host
+        host=getString(R.string.host);// Call the host
         nwc= new NetworkConnection(LoginActivity.this);//Declare the network check
         mEtUerName = findViewById(R.id.et_user_name);
         mEtUserPassword = findViewById(R.id.et_user_password);
